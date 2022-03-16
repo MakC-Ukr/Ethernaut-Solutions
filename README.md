@@ -16,6 +16,9 @@ await contract.revise('357076663774356482118879088749846081199922365090741977136
 ## Level 19
 
 Simply use up all the gas when sending eth to partner. No gas is left for a transfer to owner in the end. 
+
+(Alternate Contract): Uses a re-entrancy. Gas limit reached after several recursiive "re-enterings".
+
 Steps to pass the level:
 1. Deploy the malicious contract
 2. Call Level 19's withdraw function()
